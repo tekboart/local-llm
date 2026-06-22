@@ -1,0 +1,28 @@
+# Streamlit Configuration File
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+runOnSave = true  # Auto-reload when saving
+
+# [global]
+# if use developmentMode = true, you cannot use [server]'s port
+# developmentMode = true  # Set to true for development mode, false for production
+
+# [theme]
+# # NOTE: I used my own custom css.style file to override the default theme.
+# # base = "light"  # Options: "light", "dark"
+# primaryColor = "#ffa800"
+# backgroundColor = "#f0f2f6"
+# # secondaryBackgroundColor = "#f1e8f3"
+# secondaryBackgroundColor = "#efddf3"
+# textColor = "#000c73"
+# font = "sans serif"  # Options: "sans serif", "serif", "monospace"
+
+[client]
+toolbarMode = "auto"  # Options: "auto", "viewer", "minimal"
+
+[logger]
+level = "info"  # Options: "debug", "info", "warning", "error"

@@ -1,0 +1,40 @@
+# IDE's Cache Files
+__pycache__
+.pytest_cache
+.vscode
+.idea
+.vim
+.ipynb_checkpoints
+*.pyc
+
+# the Drawio backup files
+*.bkp
+*.dtmp
+
+# Virtualenv
+.venv
+venv/
+.env
+.python-version
+pyvenv.cfg
+pip-selfcheck.json
+
+# Pipenv
+.python-version
+[pP]ipfile
+[pP]ipfile.lock
+
+# Exclude data
+data
+
+# Exclude the databases
+db
+
+# Exlude logs
+logs
+
+# Temp files
+temp
+
+
+

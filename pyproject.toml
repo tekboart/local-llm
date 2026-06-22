@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tekboart-llm"
+version = "0.0.1-beta"
+description = "A local LLM system for TekBoArt"
+authors = ["tekboart <tekboart@gmail.com>"]
+readme = "README.md"
+packages = [
+	{include = "tekboart_llm", from = "src"},
+	# {include = "utils", from = "src/utils"}
+	# {include = "front_end"}
+]
+# dirs/files to be excluded from package (e.g., when distributed to PyPI)
+exclude = ["data", "db", "log"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
