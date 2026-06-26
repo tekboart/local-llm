@@ -48,28 +48,42 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-svg?style=flat&color=FF4B4B&logo=streamlit&logoColor=white&labelColor=gray)
 ![LangChain](https://img.shields.io/badge/LangChain-svg?style=flat&color=7FC8FF&logo=langchain&logoColor=white&labelColor=gray)
 
-==============
+I developed this local LLM from scratch to address my need to have access to an LLM that can be inputed my unpublished academic ideas and works, without worring about it them being stored somewhere in the cloud.
+While there are great Open-Source options for local LLM, such as "LM Studio", as a hands-on scientist I wanted to have full and granular control over all the facilities the LLM has. Moreover, I saw this as an opportunity to learn and understand more about how to implement a RAG based LLM that truly works, without relying on a fully-fledged counterpart like "LM Studio".
+
+## Features
+- While the default is using local LLMs through Ollama, you have the option to choose online LLM APIs (e.g., OpenAI).
+- For local models, you can choose any model that is available in Ollama.
+- You have control over what's included in your database.
+- You have control over wether to use RAG or use the entire documents.
+
+
+<hr height="10">
 
 # Development
+
 ## 🧭 Roadmap / To-Do of ADA Mapping LLM
 
 - [ ] Containerize (with Docker)
 - [ ] User authentication (OIDC / OAuth)
 - [ ] Add SSL (HTTPS)
 - [ ] Role-based access control
-- [ ] Database
+- [x] Vector Database
+- [ ] Add more Database that the user can choose from
 - [x] Audit logging and error reporting
 - [ ] CI/CD pipeline and deployment hardening
 
+<hr height="10">
+
 # How to Use
 
-# Install Using Docker (clean)
+# a. Install Using Docker (clean)
 
 ```bash
 docker xxxx
 ```
 
-# Install Manually
+# b. Install Manually
 
 ## Install system libraries
 
